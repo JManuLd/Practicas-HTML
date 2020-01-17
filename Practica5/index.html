@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORMULARIO (Inputs)</h1>
+    <form>
+      <!--Type="text"-->
+      <!--El minilength nos permite la cantidad de longitud que debemos escribir y el maxlength nos permite
+        la canitdad de caracteres que debemos ingesar en el input-->
+      <!--El for nos permite darle click en cualquier parte de el input y nos permite ir directamente al cuadro de texto -->
+      <!--Cuando vamos a poner numeros y queremos poner cierta cantidad ocupamos Min y Max-->
+      <label for="Nom">Nombre:</label
+      ><input
+        placeholder="Holii Pon tu nombre aqui"
+        id="Nom"
+        type="text"
+        required
+      />
+      <br />
+      <label for="Ape">Apellido:</label
+      ><input type="text" id="Ape" minlength="3" maxlength="5" />
+      <br />
+      <labe for="Correo">Correo:</labe><input id="Correo" type="email" />
+      <br />
+      <label for="Contra">Cotraseña:</label
+      ><input type="password" id="Contra" />
+      <br />
+      <label for="Tel">Telefono</label
+      ><input id="Tel" min="0" max="10" type="number" />
+      <br />
+      
+
+      <hr />
+
+      <h2>Selecciona Una Opcion</h2>
+      <input type="radio" value="Masculino" name="sexo" checked id="" >Masculino
+      <input type="radio" value="Femenino" name="sexo" id=""> Femenino
+
+      <br>
+
+      <input checked type="checkbox" value="Opcion1">Opcion 1
+      <input type="checkbox" value="Opcion2">Opcion 2
+      <input type="checkbox" value="Opcion3">Opcion 3
+      <input type="checkbox" value="Opcion4">Opcion 4
+      <br>
+      <label for="">Selecciona Una Fecha</label><input min="2020-01-01" max="2020-12-31" value="2020-01-17" type="date">
+      <label for="">Seleccionar un Mes</label><input min="2020-01" max="2020-12" type="month">
+      <br>
+     <label for="">Seleccionar Color</label> <input type="color">
+      <br />
+      <br>
+      <label for="">Rango</label><input type="range">
+      <br>
+      <label for="">Selecciona Una Opcion</label>
+         <select disabled name="" id="">
+          <option selected value="">---Seleccionar---</option>
+          <option value="ch">Ch</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+          <option value="l">L</option>
+      </select>
+      <br>
+      <br>
+      <input hidden type="submit" value="Probar Formulario" />
+      
+    </form>
+  </body>
+</html>
